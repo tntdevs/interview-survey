@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+    .remv {
+      display: none;
+    }
+    .wid{
+        width: 100% !important
+    }
+    .EMC{
+        padding-left: 2rem !important
+        }
+  }
+
+
+body{
+    background-color: #e9e9e9 !important;
+}
+.center{
+    text-align: center
+}
+.pad{
+    padding: 8rem 8rem 2rem 8rem;
+}
+.border{
+    border:1px solid
+}
+.navBtton{
+    border: 1px solid;
+}
+.white{
+background-color: white;
+}
+.icon{
+    padding: 3rem;
+    background: white;
+    margin: 2rem;
+}
+.browserall{
+    margin-left: 2.5rem;
+    border-right: 1px solid;
+    height: 5rem;
+    width: 50%
+}
+.nav{
+    padding-top: 12px;
+    color:#0079BA
+}
+.search{
+    height:4rem;
+    width: 70%
+}
+.flx{
+    display: inline-flex;
+    width:100%
+}
+.EMC{
+padding-left: 5rem !important
+}
