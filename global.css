@@ -8,12 +8,17 @@
     .EMC{
         padding-left: 2rem !important
         }
+    .hnd{
+        width: 100%;
+    }
   }
 
 
 body{
     background-color: #e9e9e9 !important;
 }
+
+
 .center{
     text-align: center
 }
@@ -55,3 +60,17 @@ background-color: white;
 .EMC{
 padding-left: 5rem !important
 }
+
+@media (min-width: 1281px) {
+  
+    .fift{
+        width: 50% !important
+        }
+        .left{
+            float: left;
+            }
+            .rght{
+                float: right;
+            }
+    
+  }
