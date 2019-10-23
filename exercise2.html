@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="sumofAll()">
+
+    <div class="container">
+        <script>
+            var networking=[
+             {text:'Google Wifi - Wi-Fi system (3 routers) - mesh - GigE - 802.11a/b/g/n/ac - Dual Band',price:250.25},
+             {text:'Linksys VELOP Whole Home Mesh Wi-Fi System (Pack of 3)',price:110.95},
+             {text:'NETGEAR - Nighthawk X10 Wireless-AD7200 Tri-Band Wi-Fi Router - Black',price:50.99},
+             {text:'Linksys EA8300 Max-Stream AC2200 Tri-Band Wi-Fi Router',price:49},
+            ]
+            var power=[
+                {text:'Dell 65-Watt 3-Prong AC Adapter with 6 ft Power Cord',price:59.99},
+                {text:'Dell 45-Watt 3-Prong AC Adapter with 3-ft US Power Cord for Select Dell XPS / Inspiron Laptops',price:45.48},
+                {text:' Dell Slim Power Adapter - 130 Watt with 3 ft Power Cord',price:79.99},
+                {text:'Linksys EA8300 Max-Stream AC2200 Tri-Band Wi-Fi Router',price:67.97},
+            ]
+        </script>
+        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="first.PNG" alt="first"  style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="Capture.PNG" alt="capture" style="width:100%;">
+                </div>
+
+            </div>
+            <div class="controls">
+                <ul class="nav" style="display: flex;">
+                    <li style="width: 50%; text-align: center;" id="first" data-target="#custom_carousel" data-slide-to="0"
+                        class="active"><a href="#myCarousel"><small>Sharp Graphic Big Savings</small></a></li>
+                    <li style="width: 50%; text-align: center;" id="scnd" data-target="#custom_carousel" data-slide-to="1"><a
+                            href="#myCarousel" /><small>Save up to 40% and more on Home office Solutions</small></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row center pad10">
+                <div class="col-sm-6">
+                    <img id="networkingimg" src="25662-ena-thermostat-nest-a9731361-camera-arlo-vmc4030-a9410493-router-linksys-ea8300-ac2200-a9726810-555x430.png" class="iconSize">
+                </div>
+                <div class="col-sm-6 center">
+                    
+                        <div class="row center white">
+                            <div class="col-sm-6" style="margin-bottom: 40px">
+                                <img src="device1.PNG" class="iconSize">
+                                <div class="text-blue center" data-testid="featured_module_title" id="ndv1">                                        
+                                    </div>
+                                    <div class="half-hero-pricing" id="ndv1p">
+
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 center">
+                                <img src="device2.PNG" class="iconSize">
+                                <div class="text-blue center" data-testid="featured_module_title" id="ndv2">
+                                        
+                                    </div>
+                                    <div  class="half-hero-pricing" id="ndv2p">
+
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row center white">
+                            <div class="col-sm-6">
+                                <img src="device3.PNG" class="iconSize">
+                                <div class="text-blue center" data-testid="featured_module_title" id="ndv3">
+                                        
+                                    </div>
+                                    <div class="half-hero-pricing" id="ndv3p">
+
+                                        </div>
+                            </div>
+                            <div class="col-sm-6 center">
+                                <img src="device4.PNG" class="iconSize">
+                                <div class="text-blue center" data-testid="featured_module_title" id="ndv4">
+                                        
+                                    </div>
+                                    <div class="half-hero-pricing" id="ndv4p">
+
+                                        </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="row center">
+            <div class="col-sm-6">
+                <img id="powerimg" src="25632-ups-apc-smart.png" class="iconSize">
+            </div>
+            <div class="col-sm-6 center">
+                
+                    <div class="row center white">
+                        <div class="col-sm-6" style="margin-bottom: 40px"">
+                            <img src="pdevice1.PNG" class="iconSize">
+                            <div class="text-blue center" data-testid="featured_module_title" id="pdv1">
+                                    
+                                </div>
+                                <div class="half-hero-pricing" id="pdv1p">
+
+                                    </div>
+                        </div>
+                        <div class="col-sm-6 center">
+                            <img src="pdevice2.PNG" class="iconSize">
+                            <div class="text-blue center" data-testid="featured_module_title" id="pdv2">
+                                    
+                                </div>
+                                <div class="half-hero-pricing" id="pdv2p">
+
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="row center white">
+                        <div class="col-sm-6">
+                            <img src="pdevice3.PNG" class="iconSize">
+                            <div class="text-blue center" data-testid="featured_module_title" id="pdv3">
+                                    
+                                </div>
+                                <div class="half-hero-pricing" id="pdv3p">
+
+                                    </div>
+                        </div>
+                        <div class="col-sm-6 center">
+                            <img src="pdevice4.PNG" class="iconSize">
+                            <div class="text-blue center" data-testid="featured_module_title" id="pdv4">
+                                    
+                                </div>
+                                <div class="half-hero-pricing" id="pdv4p">
+
+                                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('ndv1').innerHTML = networking[0].text;
+        document.getElementById('ndv2').innerHTML = networking[1].text;
+        document.getElementById('ndv3').innerHTML = networking[2].text;
+        document.getElementById('ndv4').innerHTML = networking[3].text;
+        document.getElementById("first").addEventListener("click", makepurple);
+        document.getElementById("scnd").addEventListener("click", makeGreen);
+
+        document.getElementById('ndv1p').innerHTML = 'Dell Price: $' + networking[0].price;
+        document.getElementById('ndv2p').innerHTML = 'Dell Price: $' + networking[1].price;
+        document.getElementById('ndv3p').innerHTML = 'Dell Price: $' + networking[2].price;
+        document.getElementById('ndv4p').innerHTML = 'Dell Price: $' + networking[3].price;
+
+        document.getElementById('pdv1').innerHTML = power[0].text;
+        document.getElementById('pdv2').innerHTML = power[1].text;
+        document.getElementById('pdv3').innerHTML = power[2].text;
+        document.getElementById('pdv4').innerHTML = power[3].text;
+
+        document.getElementById('pdv1p').innerHTML = 'Dell Price: $' + power[0].price;
+        document.getElementById('pdv2p').innerHTML = 'Dell Price: $' + power[1].price;
+        document.getElementById('pdv3p').innerHTML = 'Dell Price: $' + power[2].price;
+        document.getElementById('pdv4p').innerHTML = 'Dell Price: $' + power[3].price;
+        function makepurple(){
+            document.getElementById('networkingimg').style = 'background: purple';
+        }
+        function makeGreen(){
+            document.getElementById('powerimg').style = 'background: green';
+        }
+        function sumofAll(){
+            var totalvalue=0;            
+            power.forEach(element => {
+                totalvalue+=element.price;
+            });
+            alert("Sum of all products listed on the Power :"+ totalvalue);
+        }
+        
+
+    </script>
+</body>
+
+</html>

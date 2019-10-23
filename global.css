@@ -38,6 +38,36 @@ body{
     padding-top: 7rem;
     padding-bottom: 5rem
 }
+#cat-content-container {
+    display: flex;
+}
+.anav {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    width: 25%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.anav ul {
+    margin: 0;
+    list-style-type: none;
+}
+.cat-tile-text h4 {
+    word-break: break-word;
+    color: #007db8;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300
+}
+.cat-tile img {
+    max-height: 70px;
+    display: block;
+    margin: 0;
+}
 .half-hero-pricing {
     font-weight: bold;
     margin-bottom: 30px;
@@ -48,6 +78,122 @@ body{
 .border{
     border:1px solid
 }
+.anav {
+    position:relative;
+    top: inherit;
+    left: inherit;
+    width: 25%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: transparent
+}
+
+.anav.active {
+    display: block!important
+}
+
+.anav.no-border {
+    border: none
+}
+
+.anav-head {
+    box-sizing: border-box;
+    padding: 10px 5px 10px 10px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(270deg,#eee,#eee);
+    background-image: -webkit-linear-gradient(top,#eee,#eee);
+    background-image: linear-gradient(180deg,#eee,#eee)
+}
+
+.anav-mob {
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.anav-desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.anav-res {
+    display: none
+}
+
+.anav h5 a span:first-of-type {
+    font-weight: 700
+}
+
+.anav-icon {
+    font-size: inherit;
+    display: block;
+    padding-bottom: 8px;
+    border-top: 8px solid #007db8;
+    border-top-width: 8px;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #007db8;
+    border-bottom-width: 0;
+    border-left: 8px solid transparent;
+    width: auto;
+    height: auto
+}
+
+.anav-expand {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.anav-collapse {
+    margin-top: 6px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+}
+
+.anav-collapse:before,.anav-expand:before {
+    display: none
+}
+
+.anav>ul>li {
+    padding: 0 0 10px 10px
+}
+
+.anav>ul>li>ul {
+    display: block;
+    padding: 0;
+    border-top: none
+}
+.anav-icon.anav-expand{
+float: right;
+padding: 0
+}
+
+.anav>ul>li>ul>li {
+    margin: 0
+}
+
+.anav>ul>li>ul>li:hover {
+    background-image: -webkit-linear-gradient(top,#cce5f1,#cce5f1);
+    background-image: linear-gradient(180deg,#cce5f1,#cce5f1)
+}
+
+.anav>ul>li>ul>li a {
+    color: #333
+}
+
+.anav .anav-end {
+    display: none
+}
+.leftwithpad{
+    padding-left: 0;
+    text-align: left;
+
+}
+
 .navBtton{
     border: 1px solid;
 }

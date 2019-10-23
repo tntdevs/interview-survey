@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
 </head>
 
 <body>
@@ -35,26 +38,73 @@
     <div class="container hnd fift left">
       <div class="row center">
         <div class="col-sm-5 icon">
-          <img src="../softwarelic.png" class="iconSize">
+          <img src="softwarelic.png" class="iconSize">
           <p>Software Licenses</p>
         </div>
         <div class="col-sm-5 center icon">
-          <img src="../Warranty.png" class="iconSize">
+          <img src="Warranty.png" class="iconSize">
           <p>Warranty and Contracts</p>
         </div>
       </div>
       <div class="row center">
         <div class="col-sm-5 icon">
-          <img src="../Drivers&dnd.png" class="iconSize">
+          <img src="Drivers&dnd.png" class="iconSize">
           <p>Drivers & Downloads</p>
         </div>
         <div class="col-sm-5 icon">
-          <img src="../Diagnos.png" class="iconSize">
+          <img src="Diagnos.png" class="iconSize">
           <p>Diagonstic & Tools</p>
         </div>
       </div>
     </div>
+    <div class="enterprise-support bottom-offset-30" id="divEnterpriseProductLinks">
+      <div class="container enterprise-tiles">
+          <div class="row">
+              <div class="col-xs-12">
+                  <h2 class="heading-secondary bottom-offset-15">Dell EMC Support Technologies</h2></div></div>
+          <div class="row support-tiles">
+                  <div class="col-sm-6 col-xs-12">
+                      <div class="well card" style="border-left: 3px solid #007db8" data-metrics="{&quot;btnname&quot;:&quot;techdirect&quot;,&quot;appcode&quot;:&quot;890.000.060&quot;}">
+                          <a href="//techdirect.dell.com/portal/Login.aspx" class="card-content" data-mh="enterprise-tiles" style="">
+                              <h4 class="heading-secondary bottom-offset-15">
+                                  TechDirect
+                              </h4>
+                              <p title="Request support or replacement parts online, integrate support APIs into your help desk or train your staff on Dell EMC products. Available for PCs, PowerEdge servers, PowerVault, PS Series and SC Series storage, and Dell EMC networking.">Request support or replacement parts online, integrate support APIs into your help desk or train your staff on Dell EMC products. Available for PCs, PowerEdge servers, PowerVault, PS Series and SC Series storage, and Dell EMC networking.</p>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                      <div class="well card" style="border-left: 3px solid #777777" data-metrics="{&quot;btnname&quot;:&quot;myservice360&quot;,&quot;appcode&quot;:&quot;111.450.100.000&quot;}">
+                          <a href="https://support.emc.com/myservice360/" class="card-content" data-mh="enterprise-tiles" style="">
+                              <h4 class="heading-secondary bottom-offset-15">
+                                  MyService360
+                              </h4>
+                              <p title="Monitor, plan, and take action on your Dell EMC environment health with real-time insights and visualized trending and analysis of your incidents, install base, health/risk, and onsite services. Available for all data protection and storage (except PS Series and SC Series).">Monitor, plan, and take action on your Dell EMC environment health with real-time insights and visualized trending and analysis of your incidents, install base, health/risk, and onsite services. Available for all data protection and storage (except PS Series and SC Series).</p>
+                          </a>
+                      </div>
+                  </div>
+          </div>
+      </div>
   </div>
+  </div>  
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="Drivers&dnd.png" />
+      </li>
+      <li>
+        <img src="Warranty.png" />
+      </li>
+      <li>
+        <img src="softwarelic.png" />
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
 </body>
 
 </html>
